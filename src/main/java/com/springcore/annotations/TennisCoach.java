@@ -12,7 +12,7 @@ public class TennisCoach implements Coach {
 		System.out.println("Tennis Coach: Default constructor!!");
 	}
 	
-	@Autowired
+//	@Autowired
 	public TennisCoach(FortuneService fortuneService) {
 		super();
 		this.fortuneService = fortuneService;
@@ -27,10 +27,13 @@ public class TennisCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 	
-//	@Autowired
+	@Autowired
+	public void willCallHappy(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+		System.out.println("willCallHappy inInjection!");
+	}
+	
 	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
-		System.out.println("Setter Injection!");
 	}
-
 }
