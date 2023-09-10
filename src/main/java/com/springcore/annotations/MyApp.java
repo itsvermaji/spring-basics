@@ -1,12 +1,6 @@
-package com.springcore.start;
+package com.springcore.annotations;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.springcore.annotations.BadFortuneService;
-import com.springcore.annotations.Coach;
-import com.springcore.annotations.FortuneService;
-import com.springcore.annotations.HappyFortuneService;
-import com.springcore.annotations.TennisCoach;
 
 public class MyApp {
 	public static void main(String[] args) {
